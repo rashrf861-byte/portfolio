@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #008c3a;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.navbar a.active, .navbar a:hover {
+    background-color: #ffff00;
+    color: #000000;
+}
+
+/* Main Layout & Green Card */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+    padding: 20px;
+}
+
+.card {
+    background-color: #00c853;
+    padding: 30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    color: #000000;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: #ffff00;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+hr {
+    border: 1px solid #000;
+    margin: 15px 0;
+}
+
+/* Links & Buttons */
+.btn-link {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    background-color: #ffff00;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-sizing: border-box;
+}
+
+.btn-link:hover {
+    background-color: #b9f6ca;
+}
+
+/* Forms & Inputs */
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    outline: none;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffff00;
+    border: none;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #b9f6ca;
+}
+
+/* Table */
+.projects-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.projects-table th, .projects-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    color: #000000;
+}
+
+.projects-table th {
+    background-color: #ffff00;
+    font-weight: bold;
+}
+
+/* Lists */
+ul {
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
